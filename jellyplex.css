@@ -1,0 +1,24 @@
+@import url("/css/base/jellyfin/jellyfin-base.css?sha=628ac1d7d69e23b141c2f16e7223fbbadb077655");
+@import url("/css/theme-options/plex.css?sha=f31f9e494f6e675b55d16f0f811d94a0b9def845");
+/*Narrow the login form, size according to display size (bigger on mobile)*/
+#loginPage .readOnlyContent,
+#loginPage form {
+  max-width: 22em;
+}
+
+/*Hide "please login" text, margin is to prevent login form moving too far up*/
+#loginPage h1 {
+  display: none
+}
+#loginPage .padded-left.padded-right.padded-bottom-page {
+  margin-top: 8em
+}
+
+/*Hide "manual" and "forgot" buttons}*/
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button {
+  display: none
+}
+#loginPage {
+  background: url(https://ibb.co/Mh53H5x) !important; 
+  background-size: cover !important;
+}
